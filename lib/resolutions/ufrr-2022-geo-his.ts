@@ -1,0 +1,606 @@
+import type { QuestionResolution } from '../types';
+
+const EXAM_ID = 'ufrr-integral-2022';
+const REVIEW_DATE = '2026-11-16T16:10:00.000Z';
+
+export const UFRR_2022_GEO_HIS_RESOLUTIONS: QuestionResolution[] = [
+  // ================= GEOGRAFIA (Q37–Q45) =================
+  {
+    questionId: 'ufrr-2022-q37',
+    examId: EXAM_ID,
+    subject: 'Geografia',
+    topic: 'Cartografia — Projeções Cartográficas',
+    questionType: 'geo-cartografia-projecoes-classificacao',
+    methodTitle: 'Superfícies de Projeção e Suas Posições Clássicas na Cartografia',
+    decisiveConcept:
+      'Na classificação cartográfica clássica quanto à posição da superfície de referência: as projeções **planas (azimutais)** podem ser *polar, equatorial ou oblíqua*, e as projeções **cilíndricas** assumem as posições *normal (equatorial), transversal e oblíqua*. A afirmação E atribui indevidamente às projeções **cônicas** essa tríplice divisão das cilíndricas.',
+    quickSolution:
+      'As alternativas A, B, C e D definem corretamente as projeções planas, conformes, afiláticas (Robinson/Miller) e equivalentes/equidistantes. Já a **Alternativa E** é **INCORRETA**, pois aplica às projeções **cônicas** a classificação posicional típica das projeções **cilíndricas** (normal, transversal e oblíqua/horizontal).',
+    macete: {
+      title: 'Plana = Polar/Equatorial/Oblíqua; Cilíndrica = Normal/Transversal/Oblíqua; Cônica = Normal (eixo no polo)!',
+      strategy:
+        'Em questões de Cartografia sobre propriedades: **Conforme** = conserva **Â**ngulos (deforma área); **Equivalente** = conserva **Á**rea (deforma ângulos); **Equidistante** = conserva **D**istâncias (deforma área e forma); **Afilática** = não conserva nada perfeitamente, minimizando distorções (Robinson, Miller). Como B, C e D batem 100% e A descreve perfeitamente a plana, a troca sorrateira está em **E** (*cônicas* no lugar de *cilíndricas*).',
+      whenToUse: 'Questões pedindo a afirmativa incorreta sobre classificação de projeções cartográficas.',
+      caution: 'Leia sempre se o enunciado pede a CORRETA ou a **INCORRETA** — aqui pede a incorreta!',
+    },
+    alternativeAnalysis: [
+      { letter: 'A', status: 'incorreta', explanation: 'Afirmação correta: projeções planas ou azimutais tangenciam o globo no polo (polar), no Equador (equatorial) ou em latitude intermediária (oblíqua).' },
+      { letter: 'B', status: 'incorreta', explanation: 'Afirmação correta: projeções conformes mantêm os ângulos reais, preservando a forma de pequenas áreas (como na projeção de Mercator).' },
+      { letter: 'C', status: 'incorreta', explanation: 'Afirmação correta: Robinson e Miller são afiláticas, buscando equilíbrio visual sem conservar exatamente áreas, ângulos ou distâncias.' },
+      { letter: 'D', status: 'incorreta', explanation: 'Afirmação correta: nenhuma projeção plana pode ser simultaneamente equivalente e equidistante/conforme sem deformar outras propriedades.' },
+      { letter: 'E', status: 'correta', explanation: '**Afirmativa INCORRETA (gabarito)**: as posições *normal, transversal e oblíqua (horizontal)* referem-se à classificação clássica das projeções **cilíndricas**, e não das cônicas.' },
+    ],
+    proposedAnswer: 'E',
+    officialAnswer: null,
+    officialAnswerStatus: 'unavailable',
+    verificationStatus: 'verified_independent',
+    verificationNotes: 'Comparação direta com as definições do IBGE (Noções Básicas de Cartografia).',
+    reviewedAt: REVIEW_DATE,
+    contentVersion: 2,
+  },
+  {
+    questionId: 'ufrr-2022-q38',
+    examId: EXAM_ID,
+    subject: 'Geografia',
+    topic: 'Geografia Regional de Roraima — Biomas e Biodiversidade',
+    questionType: 'geo-roraima-biomas-lavrado-floresta',
+    methodTitle: 'Mapeamento dos Domínios Naturais de Roraima (Lavrado, Floresta e Região Serrana)',
+    decisiveConcept:
+      'Roraima apresenta três grandes paisagens fitogeográficas principais: **Floresta Tropical Amazônica** (sul, oeste e noroeste — densa e úmida), **Campos Gerais do Rio Branco / Lavrado** (nordeste e centro-leste — savana com árvores esparsas como caimbés, paricaranas e muricizeiros, além de gramíneas) e **Região Serrana** (extremo norte/Escudo das Guianas).',
+    quickSolution:
+      'Eliminam-se com segurança três alternativas:\n- **C** mistura Floresta Amazônica com vegetação rala e gramíneas (que pertencem ao Lavrado).\n- **D** atribui erroneamente os termos *lavrado/savana* e as árvores típicas do lavrado (*caimbé, paricarana, muricizeiro*) à *Região Serrana*.\n- **E** localiza os Campos do Rio Branco no *Sul* (ficam no nordeste/centro-leste) e atribui *"escassa fauna e flora"*.\n\nEntre **A** e **B**, ambas trazem informações geograficamente defensáveis (fauna de campos/florestas em A e extensão da floresta densa na porção oeste/sudoeste em B), dependendo da fonte regional adotada pela banca, mantendo-se este item como **verificação pendente** até consulta ao gabarito oficial.',
+    macete: {
+      title: 'Caimbé + Paricarana + Muricizeiro + Gramíneas = LAVRADO (Nordeste de RR), nunca Sul nem Floresta!',
+      strategy:
+        'Em Geografia de Roraima, a UFRR adora trocar as três zonas: (1) **Lavrado/Campos do Rio Branco** = nordeste/centro-leste; (2) **Floresta Amazônica** = sul e oeste; (3) **Serrana** = extremo norte (Pacaraima, Monte Roraima, Tepequém). Sempre desconfie quando atribuem gramíneas/caimbé à floresta ou à serra!',
+      whenToUse: 'Questões sobre fitogeografia e domínios naturais do Estado de Roraima.',
+      caution: 'Verifique com atenção a distribuição regional das espécies de flora (*caimbé* = lavrado) e a localização cardeal correta do lavrado (nordeste/leste).',
+    },
+    alternativeAnalysis: [
+      { letter: 'A', status: 'pendente', explanation: 'Associa espécies de fauna aos Campos do Rio Branco e às Florestas Amazônicas; depende do recorte textual específico adotado pela banca.' },
+      { letter: 'B', status: 'pendente', explanation: 'Descreve corretamente a Floresta Tropical Amazônica como densa e úmida, mencionando especificamente a região sudoeste (embora cubra também todo o sul e oeste do estado).' },
+      { letter: 'C', status: 'incorreta', explanation: 'Árvores mais rarefeitas e gramíneas para criação de animais caracterizam o **Lavrado (Campos do Rio Branco)**, e não a Floresta Amazônica densa.' },
+      { letter: 'D', status: 'incorreta', explanation: 'Confunde a **Região Serrana** (relevo elevado ao norte) com o **Lavrado/Savana** (Campos do Rio Branco), onde predominam caimbés, paricaranas e muricizeiros.' },
+      { letter: 'E', status: 'incorreta', explanation: 'Os Campos Gerais do Rio Branco ficam no **nordeste** do estado (não no Sul) e abrigam rica biodiversidade (especialmente em veredas/buritizais e matas ciliares).' },
+    ],
+    proposedAnswer: null,
+    officialAnswer: null,
+    officialAnswerStatus: 'unavailable',
+    verificationStatus: 'pending_verification',
+    verificationNotes:
+      'C, D e E são claramente incorretas, porém tanto A quanto B apresentam enunciados compatíveis com a geografia de Roraima sem o texto-fonte literal e sem o gabarito oficial.',
+    reviewedAt: REVIEW_DATE,
+    contentVersion: 2,
+  },
+  {
+    questionId: 'ufrr-2022-q39',
+    examId: EXAM_ID,
+    subject: 'Geografia',
+    topic: 'Geomorfologia — Formas de Relevo',
+    questionType: 'geo-geomorfologia-relevo-morro-testemunho-falesia',
+    methodTitle: 'Distinção entre Formas Continentais (Cuesta, Morro Testemunho, Inselberg) e Costeiras (Falésia)',
+    decisiveConcept:
+      '**Morro testemunho** é uma elevação residual **continental** (topo tabular ou alongado, comum junto a chapadas e cuestas sedimentares) que resistiu ao recuo erosivo pluvial/fluvial de antigas superfícies mais extensas — **não** é uma forma costeira esculpida pelo mar.',
+    quickSolution:
+      'Cuesta (A), sumidouro cárstico (B), inselbergue (D) e falésia (E) estão definidos corretamente. A **Alternativa C** é **INCORRETA**, pois o morro testemunho resulta de erosão diferencial **continental** (testemunhando a antiga extensão de chapadas/cuestas), e não de processos erosivos marinhos costeiros.',
+    macete: {
+      title: 'Falésia = Costeira (marinha); Morro Testemunho = Continental (sobra de chapada/cuesta)!',
+      strategy:
+        'O próprio nome já ajuda: *morro testemunho* "testemunha" até onde ia um planalto/chapada no **interior continental** antes da erosão desgastar ao redor. Quem é esculpida pelo mar na costa é a **falésia** (E)!',
+      whenToUse: 'Questões de geomorfologia sobre definição e gênese de feições do relevo.',
+      caution: 'Lembre que o enunciado pede a afirmativa **INCORRETA**.',
+    },
+    alternativeAnalysis: [
+      { letter: 'A', status: 'incorreta', explanation: 'Afirmação correta: cuestas formam-se em camadas sedimentares inclinadas de bacias sedimentares com front abrupto e reverso suave.' },
+      { letter: 'B', status: 'incorreta', explanation: 'Afirmação correta: sumidouros são feições típicas do relevo cárstico (calcário) por onde rios mergulham no subsolo.' },
+      { letter: 'C', status: 'correta', explanation: '**Afirmativa INCORRETA (gabarito)**: morro testemunho é um relevo residual **continental**, remanescente da erosão de chapadas ou cuestas, sem origem costeira marinha.' },
+      { letter: 'D', status: 'incorreta', explanation: 'Afirmação correta: inselbergues ("montes-ilha") são comuns em superfícies aplainadas e escudos cristalinos/metamórficos (como em Roraima e no Sertão nordestino).' },
+      { letter: 'E', status: 'incorreta', explanation: 'Afirmação correta: falésia é o paredão abrupto no contato entre o continente e o litoral/praia.' },
+    ],
+    proposedAnswer: 'C',
+    officialAnswer: null,
+    officialAnswerStatus: 'unavailable',
+    verificationStatus: 'verified_independent',
+    verificationNotes: 'Conceito clássico da geomorfologia estrutural/climática.',
+    reviewedAt: REVIEW_DATE,
+    contentVersion: 2,
+  },
+  {
+    questionId: 'ufrr-2022-q40',
+    examId: EXAM_ID,
+    subject: 'Geografia',
+    topic: 'Geografia Econômica do Brasil — Impactos da Pandemia no PIB',
+    questionType: 'geo-economia-brasil-pib-2020-pandemia',
+    methodTitle: 'Comportamento Setorial do PIB Brasileiro em 2020 (Agropecuária Positiva vs. Serviços/Indústria)',
+    decisiveConcept:
+      'Em 2020 (primeiro ano da pandemia de Covid-19), enquanto Serviços ($-4{,}5\\%$) e Indústria retraíram fortemente levando o PIB brasileiro a queda de $4{,}1\\%$, o **setor agropecuário apresentou CRESCIMENTO de $2{,}0\\%$** (e não queda), impulsionado pela safra recorde de grãos e exportações.',
+    quickSolution:
+      'As alternativas B, C, D e E reproduzem corretamente os indicadores oficiais do IBGE e da CNI referentes a 2020 (serviços caindo $4{,}5\\%$, indústria representando $20{,}4\\%$ do PIB/empregos formais e indústria de transformação com $11{,}3\\%$ do PIB). A **Alternativa A** é **INCORRETA**, pois afirma que a agropecuária teve *queda* de $2{,}0\\%$, quando na realidade ela **cresceu** cerca de $2{,}0\\%$ em 2020.',
+    macete: {
+      title: 'Em 2020 (pandemia), a Agropecuária foi o ÚNICO setor grande a CRESCER (+2,0%), nunca cair!',
+      strategy:
+        'Mesmo sem decorar todas as porcentagens da CNI, lembre de um fato marcante da economia recente: durante o isolamento de 2020, serviços e indústria despencaram, mas o **agronegócio/agropecuária cresceu (+2%)** garantindo a alimentação e exportações. Dizer "maior queda dos últimos 60 anos" na Agropecuária em 2020 denuncia na hora o erro da letra **A**!',
+      whenToUse: 'Questões de atualidades e geografia econômica sobre o PIB brasileiro na pandemia.',
+      caution: 'Observe que o dado de B, D e E vem dos relatórios oficiais da CNI (*Perfil da Indústria*) e o de C do IBGE (*Contas Nacionais 2020*), todos fidedignos.',
+    },
+    alternativeAnalysis: [
+      { letter: 'A', status: 'correta', explanation: '**Afirmativa INCORRETA (gabarito)**: segundo o IBGE (Contas Nacionais de 2020), o PIB agropecuário **cresceu $2{,}0\\%$** em 2020 (não caiu), sendo o único grande setor com resultado positivo no ano.' },
+      { letter: 'B', status: 'incorreta', explanation: 'Dado verdadeiro (CNI 2020/2021): a indústria de transformação respondeu por $11{,}3\\%$ do PIB e concentra cerca de dois terços do P&D empresarial.' },
+      { letter: 'C', status: 'incorreta', explanation: 'Dado verdadeiro (IBGE 2020): o setor de serviços caiu exatamente $4{,}5\\%$ em 2020 devido às restrições sanitárias.' },
+      { letter: 'D', status: 'incorreta', explanation: 'Dado verdadeiro (CNI): o conjunto industrial correspondeu a $20{,}4\\%$ do PIB brasileiro e $69{,}2\\%$ das exportações.' },
+      { letter: 'E', status: 'incorreta', explanation: 'Dado verdadeiro (CNI/RAIS): $20{,}4\\%$ do emprego formal e melhores rendimentos industriais na transformação.' },
+    ],
+    proposedAnswer: 'A',
+    officialAnswer: null,
+    officialAnswerStatus: 'unavailable',
+    verificationStatus: 'verified_independent',
+    verificationNotes: 'IBGE Contas Nacionais Trimestrais 2020: Agropecuária +2,0%; Serviços -4,5%; PIB total -4,1%.',
+    reviewedAt: REVIEW_DATE,
+    contentVersion: 2,
+  },
+  {
+    questionId: 'ufrr-2022-q41',
+    examId: EXAM_ID,
+    subject: 'Geografia',
+    topic: 'Geografia Agrária — Agronegócio no Brasil',
+    questionType: 'geo-agraria-agronegocio-cidades-trabalho',
+    methodTitle: 'Cidades do Agronegócio e Nova Divisão Territorial do Trabalho no Campo Brasileiro',
+    decisiveConcept:
+      'A expansão do agronegócio moderno reorganizou profundamente a **divisão social e territorial do trabalho**, deslocando e fixando profissionais especializados (agrônomos, veterinários, técnicos, operadores digitais e gestores) em **cidades médias do interior** ligadas às Regiões Produtivas Agrícolas (RPAs), e nunca "exclusivamente em metrópoles".',
+    quickSolution:
+      'As afirmações A, B, C e D sintetizam processos reais do agronegócio brasileiro (meio técnico-científico-informacional, especialização em *commodities*, cidades do agronegócio como Luís Eduardo Magalhães/Rondonópolis e concentração fundiária). A **Alternativa E** é **INCORRETA**, pois afirma falsamente que os especialistas seguem concentrados *exclusivamente* em metrópoles e *sem alteração* na divisão social e territorial do trabalho.',
+    macete: {
+      title: 'Cidades do Agronegócio (ex.: Rondonópolis, LEM) PROVA que o trabalho especializado foi para o interior!',
+      strategy:
+        'Olhe o contraste interno entre **C** e **E**: a própria alternativa C mostra o surgimento de cidades especializadas para atender às demandas do agronegócio no interior (BA, PI, MT), o que contradiz frontalmente dizer em E que profissionais seguem *exclusivamente em metrópoles* e *sem alteração na divisão territorial do trabalho*! E palavras totalizantes como **"exclusivamente"** merecem alerta máximo!',
+      whenToUse: 'Questões de geografia agrária sobre modernização conservadora e urbanização no campo (Milton Santos / Denise Elias).',
+      caution: 'Embora o comando corporativo/financeiro muitas vezes fique nas metrópoles, a atuação técnica especializada e os serviços ligados ao agronegócio interiorizaram-se fortemente.',
+    },
+    alternativeAnalysis: [
+      { letter: 'A', status: 'incorreta', explanation: 'Afirmação correta: incorpora o conceito miltoniano de meio técnico-científico-informacional aplicado ao campo.' },
+      { letter: 'B', status: 'incorreta', explanation: 'Afirmação correta: o modelo agroexportador prioriza *commodities* (soja, milho, cana) gerando especializações regionais.' },
+      { letter: 'C', status: 'incorreta', explanation: 'Afirmação correta: conceituação clássica de Denise Elias sobre as "cidades do agronegócio" nas Regiões Produtivas Agrícolas.' },
+      { letter: 'D', status: 'incorreta', explanation: 'Afirmação correta: a mecanização intensiva e a concentração de terras impulsionaram o êxodo rural e a expropriação camponesa.' },
+      { letter: 'E', status: 'correta', explanation: '**Afirmativa INCORRETA (gabarito)**: o agronegócio transformou intensamente a divisão social e territorial do trabalho no campo e nas cidades do interior, que hoje concentram serviços e profissionais técnicos.' },
+    ],
+    proposedAnswer: 'E',
+    officialAnswer: null,
+    officialAnswerStatus: 'unavailable',
+    verificationStatus: 'verified_independent',
+    verificationNotes: 'Contradição direta com o conceito geográfico de Cidades do Agronegócio e uso do absolutivo "exclusivamente em metrópoles".',
+    reviewedAt: REVIEW_DATE,
+    contentVersion: 2,
+  },
+  {
+    questionId: 'ufrr-2022-q42',
+    examId: EXAM_ID,
+    subject: 'Geografia',
+    topic: 'Geografia do Brasil — Ilhas Oceânicas e Unidades de Conservação',
+    questionType: 'geo-brasil-ilhas-oceanicas-unidades-conservacao',
+    methodTitle: 'Identificação Geopolítica e Ambiental das Ilhas Oceânicas Brasileiras',
+    decisiveConcept:
+      'As cinco principais formações insulares oceânicas brasileiras são: **Fernando de Noronha (PE)**, **Atol das Rocas (RN)**, **Arquipélago de São Pedro e São Paulo (PE)** e **Trindade e Martim Vaz (ES)**. Tanto Fernando de Noronha (Parque Nacional Marinho + APA) quanto o Atol das Rocas (Reserva Biológica) constituem **Unidades de Conservação** federais.',
+    quickSolution:
+      'A **Alternativa E** está inteiramente correta: Fernando de Noronha e o Atol das Rocas são ilhas oceânicas brasileiras protegidas como Unidades de Conservação (inclusive reconhecidas pela UNESCO como Patrimônio Natural Mundial).\n- **A** erra gravemente ao chamar a Ilha brasileira de Trindade (ES) de *"Ilha de Trinidad e Tobago"* (país independente do Caribe!).\n- **B** erra ao dizer que Noronha é protegida da exploração turística (o turismo ecológico é uma das principais atividades locais).\n- **C** erra ao atribuir ao minúsculo Atol das Rocas a descrição da cadeia submarina de Vitória-Trindade.\n- **D** erra ao atribuir pesca comercial e base de pesquisa permanente de plataforma insular a Martim Vaz (ilha de acesso restritíssimo da Marinha, sem base pesqueira).',
+    macete: {
+      title: 'Cuidado com a pegadinha clássica: TRINDADE (Brasil/ES) ≠ TRINIDAD E TOBAGO (Caribe)!',
+      strategy:
+        'A letra **A** parece certa até a metade — e então joga *"Ilha de Trinidad e Tobago"*! Sempre confira cada nome próprio nas enumerações de Geografia. Já **E** afirma um fato ambiental básico e incontestável: Noronha e Atol das Rocas são Unidades de Conservação!',
+      whenToUse: 'Questões sobre território marítimo, Amazônia Azul e ilhas oceânicas do Brasil.',
+      caution: 'Diferencie Unidades de Conservação de *Proteção Integral* (Reserva Biológica do Atol das Rocas, Parque Nacional Marinho de Fernando de Noronha) de *Uso Sustentável* (APA de Fernando de Noronha) — ambas são categorias do SNUC.',
+    },
+    alternativeAnalysis: [
+      { letter: 'A', status: 'incorreta', explanation: '**Trinidad e Tobago** é um país insular independente no Caribe; a ilha oceânica brasileira chama-se **Ilha da Trindade** (pertencente ao Espírito Santo).' },
+      { letter: 'B', status: 'incorreta', explanation: 'Fernando de Noronha possui turismo intenso e estruturado (ainda que regulado por taxas ambientais e normas de proteção).' },
+      { letter: 'C', status: 'incorreta', explanation: 'O Atol das Rocas é um pequeno anel recifal de algas calcárias (~0,36 km² emersos), e não a maior porção de uma cadeia de 1.200 km (referência distorcida da Cadeia Vitória-Trindade).' },
+      { letter: 'D', status: 'incorreta', explanation: 'O arquipélago de Trindade e Martim Vaz não está sobre a plataforma continental nem sedia atividades pesqueiras permanentes por pesquisadores (o controle é militar da Marinha, e a estação científica oceânica clássica fica em São Pedro e São Paulo / Trindade).' },
+      { letter: 'E', status: 'correta', explanation: 'Tanto Fernando de Noronha (PARNAMAR e APA) quanto o Atol das Rocas (REBIO Atol das Rocas) são Unidades de Conservação federais brasileiras.' },
+    ],
+    proposedAnswer: 'E',
+    officialAnswer: null,
+    officialAnswerStatus: 'unavailable',
+    verificationStatus: 'verified_independent',
+    verificationNotes: 'SNUC/ICMBio: REBIO Atol das Rocas e PARNAMAR/APA Fernando de Noronha.',
+    reviewedAt: REVIEW_DATE,
+    contentVersion: 2,
+  },
+  {
+    questionId: 'ufrr-2022-q43',
+    examId: EXAM_ID,
+    subject: 'Geografia',
+    topic: 'Geopolítica — Blocos Econômicos Regionais',
+    questionType: 'geo-geopolitica-mercosul-usmca-uniao-europeia',
+    methodTitle: 'As Quatro Liberdades do Mercado Comum Europeu vs. USMCA e Mercosul',
+    decisiveConcept:
+      'Um **Mercado Comum** (estágio alcançado pela União Europeia e objetivo do Mercosul) caracteriza-se pelas **quatro liberdades de circulação**: bens, serviços, capitais **e pessoas**. Afirmar que na Europa as pessoas seguem impedidas de circular livremente dentro do bloco torna a assertiva III falsa.',
+    quickSolution:
+      'Avaliando as assertivas:\n- **I (Correta)**: Brasil, Argentina, Paraguai e Uruguai fundaram o Mercosul em 1991 (Tratado de Assunção) com o objetivo explícito de ampliar mercados nacionais e promover desenvolvimento econômico com justiça social.\n- **II (Correta)**: O acordo **USMCA** (EUA, México e Canadá) substituiu o antigo NAFTA.\n- **III (Incorreta)**: O Mercado Único Europeu prevê justamente a livre circulação das **quatro liberdades** — inclusive de **pessoas** (reforçada pelo Espaço Schengen), não apenas bens, serviços e capitais.\n\nLogo, **I e II estão corretas e III está incorreta** (**Alternativa E**).',
+    macete: {
+      title: 'Mercado Único Europeu = 4 Liberdades (Bens + Serviços + Capitais + PESSOAS)!',
+      strategy:
+        'Viu uma assertiva dizendo que um bloco europeu permite circular capital/mercadorias, *"enquanto as pessoas seguem com restrições de circulação livre dentro do bloco"*? É falsa na hora! A livre circulação de trabalhadores e cidadãos entre os Estados-membros é um pilar histórico da União Europeia.',
+      whenToUse: 'Questões de geopolítica sobre graus de integração econômica (Zona de Livre Comércio, União Aduaneira, Mercado Comum, União Monetária).',
+      caution: 'Embora o Reino Unido tenha saído (Brexit) e países externos tenham visto, a assertiva fala *"dentro do bloco"* e do *"mercado único"*, onde vige a livre circulação de pessoas.',
+    },
+    alternativeAnalysis: [
+      { letter: 'A', status: 'incorreta', explanation: 'II também é verdadeira: o USMCA entrou em vigor substituindo o NAFTA.' },
+      { letter: 'B', status: 'incorreta', explanation: 'III é falsa e II é verdadeira.' },
+      { letter: 'C', status: 'incorreta', explanation: 'Inverte totalmente os valores de I, II e III.' },
+      { letter: 'D', status: 'incorreta', explanation: 'I e II são verdadeiras e III é falsa.' },
+      { letter: 'E', status: 'correta', explanation: 'I (fundação do Mercosul) e II (USMCA substituindo NAFTA) são corretas; III é falsa porque o mercado único europeu inclui a livre circulação de pessoas.' },
+    ],
+    proposedAnswer: 'E',
+    officialAnswer: null,
+    officialAnswerStatus: 'unavailable',
+    verificationStatus: 'verified_independent',
+    verificationNotes: 'Tratado de Assunção (Mercosul), USMCA (2020) e 4 liberdades da UE.',
+    reviewedAt: REVIEW_DATE,
+    contentVersion: 2,
+  },
+  {
+    questionId: 'ufrr-2022-q44',
+    examId: EXAM_ID,
+    subject: 'Geografia',
+    topic: 'Industrialização — Indústria 4.0',
+    questionType: 'geo-industrializacao-industria-40-brasil',
+    methodTitle: 'Desafios da Indústria 4.0 diante da Heterogeneidade Regional Brasileira',
+    decisiveConcept:
+      'A Indústria 4.0 integra automação, inteligência artificial, robótica, IoT e computação em nuvem. No Brasil, sua difusão é **lenta e desigual** exatamente porque o parque industrial e a infraestrutura técnico-científica são fortemente **heterogêneos e concentrados** — jamais havendo *"homogeneidade industrial brasileira"*.',
+    quickSolution:
+      'As alternativas A, B, D e E descrevem corretamente os fundamentos tecnológicos, impactos produtivos e desafios de desigualdade regional da Indústria 4.0 no país. A **Alternativa C** é **INCORRETA**, pois o Brasil **não** possui "homogeneidade industrial" nem difusão acelerada generalizada da Indústria 4.0 (como a própria alternativa E evidencia ao apontar a concentração regional).',
+    macete: {
+      title: 'Contradição interna entre C ("homogeneidade") e E ("desigualdades regionais") entrega o gabarito!',
+      strategy:
+        'Em Geografia do Brasil, desconfie imediatamente de expressões como **"homogeneidade industrial brasileira"**! O território industrial brasileiro é historicamente marcado pela **desigualdade e concentração** (Sudeste/Sul x Norte/Nordeste). Note que C e E defendem teses opostas — e na realidade do Brasil, E é verdadeira e **C é falsa**!',
+      whenToUse: 'Questões sobre 4ª Revolução Industrial e desigualdades técnico-espaciais no Brasil.',
+      caution: 'Lembre-se de que o enunciado pede a afirmação **INCORRETA**.',
+    },
+    alternativeAnalysis: [
+      { letter: 'A', status: 'incorreta', explanation: 'Afirmação correta: sintetiza os pilares tecnológicos da 4ª Revolução Industrial (IA, IoT, robótica, nuvem).' },
+      { letter: 'B', status: 'incorreta', explanation: 'Afirmação correta: a transição digital exige adaptação desigual entre os diferentes setores e portes de empresas brasileiras.' },
+      { letter: 'C', status: 'correta', explanation: '**Afirmativa INCORRETA (gabarito)**: a indústria brasileira é marcada por forte heterogeneidade tecnológica e concentração regional, não havendo "homogeneidade industrial" nem difusão acelerada homogênea.' },
+      { letter: 'D', status: 'incorreta', explanation: 'Afirmação correta: automação e análise de dados elevam eficiência produtiva e desenvolvimento de produtos.' },
+      { letter: 'E', status: 'incorreta', explanation: 'Afirmação correta: a infraestrutura técnico-científico-informacional concentra-se fortemente em polos específicos (sobretudo Centro-Sul).' },
+    ],
+    proposedAnswer: 'C',
+    officialAnswer: null,
+    officialAnswerStatus: 'unavailable',
+    verificationStatus: 'verified_independent',
+    verificationNotes: 'Contradição geográfica óbvia em "homogeneidade industrial brasileira" (refutada também pela própria alternativa E).',
+    reviewedAt: REVIEW_DATE,
+    contentVersion: 2,
+  },
+  {
+    questionId: 'ufrr-2022-q45',
+    examId: EXAM_ID,
+    subject: 'Geografia',
+    topic: 'Comércio Internacional e Setor de Serviços',
+    questionType: 'geo-economia-servicos-comercio-internacional',
+    methodTitle: 'Terciarização Mundial, Trabalho Feminino e Impactos da Pandemia nos Serviços',
+    decisiveConcept:
+      'O setor terciário (serviços) lidera a geração mundial de empregos (com forte participação da força de trabalho feminina) e ultrapassa **70% do PIB** em países de alta renda (invalidando os 50% afirmados em E). Em 2020, o comércio internacional de serviços sofreu forte queda (invalidando a alta de 30,2% em C).',
+    quickSolution:
+      'Pela análise estrutural da economia mundial:\n- **C (Incorreta)**: em 2020 o comércio exterior de serviços retraiu fortemente devido ao fechamento de fronteiras e paralisação turística.\n- **E (Incorreta)**: nos países de alta renda, os serviços representam mais de $70\\%–75\\%$ do PIB (muito acima de $50\\%$, valor próprio de economias de baixa/média-baixa renda).\n- **B** reflete tendência consolidada pela OIT e pelo Banco Mundial (maior geração de empregos no setor de serviços com forte presença feminina), enquanto **A** e **D** dependem de séries estatísticas exatas de relatórios do MDIC (como o percentual específico de $72{,}5\\%$ para viagens em 2020).\n\nPor envolver dados estatísticos específicos de fontes primárias sem o texto de referência anexado, este item fica com status de **verificação pendente**.',
+    macete: {
+      title: 'Países ricos têm > 70% do PIB em Serviços (corta E) e 2020 teve queda em serviços (corta C)!',
+      strategy:
+        'Mesmo em questões com números específicos, elimine primeiro os absurdos macroeconômicos: em economias desenvolvidas (EUA, UE, Japão), o setor terciário supera **70% do PIB** (nunca 50%); e na pandemia de 2020, o comércio exterior de serviços sofreu contração histórica (jamais aumento de 30,2%).',
+      whenToUse: 'Questões econômicas sobre setor terciário (terciarização) e comércio exterior de serviços.',
+      caution: 'Diferencie tendências estruturais globais consolidadas (como a terciarização em B) de percentuais anuais pontuais que exigem conferência do boletim oficial citado pela banca.',
+    },
+    alternativeAnalysis: [
+      { letter: 'A', status: 'pendente', explanation: 'Datas específicas (2006 e 2014) para fluxos brasileiros de serviços modernos dependem da série histórica específica usada pela banca.' },
+      { letter: 'B', status: 'pendente', explanation: 'Consistente com relatórios da OIT/OMC/Banco Mundial sobre terciarização do emprego mundial e participação feminina; aguarda confirmação contra D pelo gabarito oficial.' },
+      { letter: 'C', status: 'incorreta', explanation: 'Em 2020 (auge das restrições da pandemia), as importações e exportações brasileiras de serviços registraram forte queda, e não aumento de $30{,}2\\%$.' },
+      { letter: 'D', status: 'pendente', explanation: 'O setor de viagens foi de fato o mais afetado em 2020, porém o índice exato de $72{,}5\\%$ requer conferência direta no boletim oficial de referência.' },
+      { letter: 'E', status: 'incorreta', explanation: 'Em países de alta renda, a participação dos serviços supera $70\\%$ do PIB (chegando perto de $75\\%–80\\%$), muito acima de $50\\%$.' },
+    ],
+    proposedAnswer: null,
+    officialAnswer: null,
+    officialAnswerStatus: 'unavailable',
+    verificationStatus: 'pending_verification',
+    verificationNotes:
+      'C e E são claramente incorretas, porém a decisão entre B (verdade macroeconômica geral) e D (índice específico de 72,5% no comércio brasileiro de viagens em 2020) depende de conferência com o documento-base da banca.',
+    reviewedAt: REVIEW_DATE,
+    contentVersion: 2,
+  },
+
+  // ================= HISTÓRIA (Q46–Q54) =================
+  {
+    questionId: 'ufrr-2022-q46',
+    examId: EXAM_ID,
+    subject: 'História',
+    topic: 'Era Vargas — Integralismo e Estado Novo',
+    questionType: 'his-brasil-era-vargas-estado-novo-integralismo',
+    methodTitle: 'Separação Política entre o Estado Novo (Getúlio Vargas) e o Integralismo (Plínio Salgado)',
+    decisiveConcept:
+      '- **Estado Novo (1937–1945)**: ditadura autoritária personalista liderada por **Getúlio Vargas**, com forte apelo **trabalhista**, nacionalista e corporativista (inspirada em elementos do Estado autoritário, mas que extinguiu todos os partidos — inclusive os integralistas!).\n- **Ação Integralista Brasileira (AIB)**: movimento de inspiração **fascista** (não democrático nem liberal) liderado por **Plínio Salgado**, suprimido após o fechamento do regime e o Levante Integralista de 1938.',
+    quickSolution:
+      'O **Estado Novo** foi o regime autoritário centrado na figura de **Getúlio Vargas**, marcado pelo projeto **trabalhista** e nacionalista (e que inclusive reprimiu os integralistas após 1937) (**Alternativa A**).',
+    macete: {
+      title: 'Estado Novo = Vargas + Autoritário + Trabalhista (NÃO era Integralista — Vargas fechou a AIB!)',
+      strategy:
+        'Apenas dois fatos destroem os 4 distratores:\n1. Quem liderou o Integralismo foi **Plínio Salgado**, não Vargas (corta D); quem liderou o Estado Novo foi **Vargas**, não Plínio (corta C).\n2. O Integralismo era **fascista** (jamais democrático/liberal — corta D e E) e o Estado Novo **perseguiu** o Integralismo (corta B)! Sobra só **A**!',
+      whenToUse: 'Questões sobre a década de 1930 no Brasil: AIB vs. ANL vs. Estado Novo.',
+      caution: 'Embora o Estado Novo tenha dialogado inicialmente com o clima autoritário dos anos 1930, Vargas baniu a AIB com os demais partidos em dezembro de 1937.',
+    },
+    alternativeAnalysis: [
+      { letter: 'A', status: 'correta', explanation: 'Define com exatidão o Estado Novo (1937–1945): ditadura varguista de caráter autoritário, centralizador e com forte política trabalhista.' },
+      { letter: 'B', status: 'incorreta', explanation: 'O Estado Novo não era integralista; pelo contrário, Vargas fechou a AIB e reprimiu o levante integralista de 1938.' },
+      { letter: 'C', status: 'incorreta', explanation: 'Plínio Salgado liderava a AIB (Integralismo), jamais o Estado Novo.' },
+      { letter: 'D', status: 'incorreta', explanation: 'Duplo erro: o Integralismo era liderado por Plínio Salgado e tinha caráter antidemocrático/fascista.' },
+      { letter: 'E', status: 'incorreta', explanation: 'O Integralismo era abertamente antiliberal e antidemocrático (corporativista e autoritário, inspirado no fascismo italiano).' },
+    ],
+    proposedAnswer: 'A',
+    officialAnswer: null,
+    officialAnswerStatus: 'unavailable',
+    verificationStatus: 'verified_independent',
+    verificationNotes: 'Diferenciação clássica entre varguismo estadonovista e integralismo.',
+    reviewedAt: REVIEW_DATE,
+    contentVersion: 2,
+  },
+  {
+    questionId: 'ufrr-2022-q47',
+    examId: EXAM_ID,
+    subject: 'História',
+    topic: 'Ditadura Militar Brasileira — Anos de Chumbo e Milagre Econômico',
+    questionType: 'his-brasil-ditadura-anos-chumbo-ai5-araguaia',
+    methodTitle: 'Periodização Exata dos "Anos de Chumbo" / Governo Médici (1968–1974)',
+    decisiveConcept:
+      'O período simultâneo do **Milagre Econômico** (1969–1973), ufanismo da Copa de 1970, chegada da TV em cores (1972) e máxima repressão/tortura/execuções (**Anos de Chumbo**) tem como marco inaugural o **AI-5 (dezembro de 1968)** e se encerra em **1974** (fim do governo Médici, esgotamento do milagre pós-crise do petróleo e extermínio da **Guerrilha do Araguaia**).',
+    quickSolution:
+      'Os marcos que abrem e encerram especificamente o ciclo dos *Anos de Chumbo* e do *Milagre Econômico* descritos no enunciado (recorte também da obra *A Ditadura Escancarada*, de Elio Gaspari) são a decretação do **Ato Institucional nº 5 (1968)** e o **extermínio da Guerrilha do Araguaia (1974)** (**Alternativa C**).',
+    macete: {
+      title: 'Anos de Chumbo (ciclo mais duro da ditadura) = 1968 (AI-5) até 1974 (fim de Médici / Araguaia)!',
+      strategy:
+        'Olhe as datas das alternativas:\n- **1968–1970 (A)**: curto demais — a TV em cores citada no enunciado só começou em **1972**!\n- **1968–1983 (B)** e **1964–1987 (E)**: longos demais — o Milagre Econômico já tinha acabado em 1973/74 e o texto fala de um *período específico* de auge repressivo + crescimento econômico.\n- **1964–1968 (D)**: antecede o AI-5 e o Milagre!\nSobra **1968–1974 (C)**, que bate na mosca com AI-5 $\\to$ Governo Médici/Araguaia!',
+      whenToUse: 'Questões de periodização do Regime Militar Brasileiro (1964–1985).',
+      caution: 'Não confunda o fim dos *Anos de Chumbo* (transição para Geisel em 1974) com o fim da *Ditadura Militar* inteira (1985).',
+    },
+    alternativeAnalysis: [
+      { letter: 'A', status: 'incorreta', explanation: 'A Copa de 1970 ocorreu no meio do período; a TV em cores (1972), o auge do Milagre (1973) e a repressão ao Araguaia estenderam-se até 1974.' },
+      { letter: 'B', status: 'incorreta', explanation: 'As Diretas Já (1983–1984) pertencem à fase final da abertura política (governo Figueiredo), muito após o fim do Milagre Econômico.' },
+      { letter: 'C', status: 'correta', explanation: 'O **AI-5 (1968)** instaurou a fase de fechamento máximo e suspensão de garantias, enquanto **1974** marca o fim do governo Médici, do Milagre Econômico e o desfecho da repressão no Araguaia.' },
+      { letter: 'D', status: 'incorreta', explanation: '1964–1968 corresponde ao período inicial da ditadura (Castelo Branco e início de Costa e Silva), anterior à implantação do AI-5 e ao auge do Milagre.' },
+      { letter: 'E', status: 'incorreta', explanation: 'Abrange todo o regime militar e o início da Nova República, não o ciclo específico de Milagre Econômico + Anos de Chumbo.' },
+    ],
+    proposedAnswer: 'C',
+    officialAnswer: null,
+    officialAnswerStatus: 'unavailable',
+    verificationStatus: 'verified_independent',
+    verificationNotes: 'Cronologia exata da ditadura militar e recorte historiográfico de Elio Gaspari (A Ditadura Escancarada, 1968–1974).',
+    reviewedAt: REVIEW_DATE,
+    contentVersion: 2,
+  },
+  {
+    questionId: 'ufrr-2022-q48',
+    examId: EXAM_ID,
+    subject: 'História',
+    topic: 'História Contemporânea — Organismos Internacionais e Integração Regional',
+    questionType: 'his-contemporanea-fmi-vs-blocos-economicos',
+    methodTitle: 'Distinção entre Instituição Financeira Multilateral (FMI) e Bloco Econômico Regional',
+    decisiveConcept:
+      'O **Fundo Monetário Internacional (FMI)** é um organismo financeiro multilateral global (criado em Bretton Woods, 1944, ligado à ONU) voltado à estabilidade cambial e empréstimos a países com crises no balanço de pagamentos — **não** é um bloco comercial nem um acordo regional de integração.',
+    quickSolution:
+      'UE (união econômica e monetária), MERCOSUL (união aduaneira/mercado comum), CAN (Comunidade Andina) e NAFTA (zona de livre comércio) são acordos ou blocos regionais de integração econômica. Apenas o **Fundo Monetário Internacional – FMI** NÃO é um bloco econômico regional (**Alternativa B**).',
+    macete: {
+      title: 'FMI e Banco Mundial são instituições financeiras globais (Bretton Woods), NUNCA blocos regionais!',
+      strategy:
+        'Se quatro opções têm nomes geográficos regionais (*Europeia, Sul, Andina, América do Norte*) e uma se chama *Fundo Monetário **Internacional***, ela já se denuncia pelo alcance financeiro global e não regional!',
+      whenToUse: 'Questões classificando blocos econômicos regionais e organismos financeiros internacionais.',
+      caution: 'Observe o **NÃO** em caixa alta no enunciado.',
+    },
+    alternativeAnalysis: [
+      { letter: 'A', status: 'incorreta', explanation: 'A União Europeia é o bloco econômico de integração mais avançado do mundo (união econômica e monetária).' },
+      { letter: 'B', status: 'correta', explanation: 'O **FMI** é uma agência financeira multilateral internacional (Bretton Woods, 1944), e não um bloco econômico ou acordo regional de integração.' },
+      { letter: 'C', status: 'incorreta', explanation: 'O MERCOSUL é um bloco econômico regional sul-americano.' },
+      { letter: 'D', status: 'incorreta', explanation: 'A Comunidade Andina (CAN) é um bloco de integração regional sul-americano (Bolívia, Colômbia, Equador e Peru).' },
+      { letter: 'E', status: 'incorreta', explanation: 'O NAFTA (posteriormente substituído pelo USMCA) foi um acordo regional de livre comércio na América do Norte.' },
+    ],
+    proposedAnswer: 'B',
+    officialAnswer: null,
+    officialAnswerStatus: 'unavailable',
+    verificationStatus: 'verified_independent',
+    verificationNotes: 'FMI pertence ao sistema financeiro multilateral de Bretton Woods, não aos blocos regionais.',
+    reviewedAt: REVIEW_DATE,
+    contentVersion: 2,
+  },
+  {
+    questionId: 'ufrr-2022-q49',
+    examId: EXAM_ID,
+    subject: 'História',
+    topic: 'Brasil Colônia — Capitanias Hereditárias e Sesmarias',
+    questionType: 'his-brasil-colonia-sesmarias-capitanias-holanda',
+    methodTitle: 'Origem Institucional Portuguesa das Sesmarias (Terras Não Aproveitadas e Sesmeiros)',
+    decisiveConcept:
+      'Originária de Portugal medieval (Lei das Sesmarias de 1375), a **sesmaria** consistia na prerrogativa régia/metropolitana (delegada também aos donatários) de conceder lotes de terras consideradas não aproveitadas a terceiros para cultivo, tendo nos **sesmeiros** os responsáveis pela distribuição/gestão das concessões.',
+    quickSolution:
+      'Eliminam-se os graves anacronismos históricos das demais opções (indústria manufatureira e imprensa régia coloniais em A; trabalho livre para toda a população em B; inclusão igualitária indígena em C; capitalismo industrial em E). A **Alternativa D** descreve com rigor histórico o instituto jurídico metropolitano da sesmaria herdado da tradição lusitana (**Alternativa D**).',
+    macete: {
+      title: 'Corte os anacronismos coloniais (Indústria / Imprensa Régia / Trabalho Livre / Inclusão Indígena)!',
+      strategy:
+        'Na prova de História do Brasil Colônia, lembre do trio proibido antes de 1808: **não** havia imprensa régia, **não** havia liberdade industrial (Alvará de 1785) e **não** havia predominância de trabalho livre nem inclusão igualitária dos indígenas! Isso apaga A, B, C e E em segundos, restando apenas **D**.',
+      whenToUse: 'Questões sobre estrutura fundiária e jurídica do Brasil Colônia (capitanias e sesmarias).',
+      caution: 'Note que o termo *sesmeiro* na tradição jurídico-administrativa portuguesa originária designava o oficial encarregado de repartir as sesmarias (e no Brasil colonial também passou a nomear o beneficiário da carta de sesmaria).',
+    },
+    alternativeAnalysis: [
+      { letter: 'A', status: 'incorreta', explanation: 'Duplo anacronismo: Portugal não implantou indústria manufatureira no Brasil colonial (proibiu-a em 1785), e a Imprensa Régia só surgiu em 1808 no Rio de Janeiro.' },
+      { letter: 'B', status: 'incorreta', explanation: 'O sistema sesmarial consolidou o latifúndio agroexportador baseado no trabalho compulsório (escravizado), não no mercado interno livre de toda a população.' },
+      { letter: 'C', status: 'incorreta', explanation: 'As capitanias intensificaram o choque violento, o aldeamento forçado e a escravização contra os povos originários.' },
+      { letter: 'D', status: 'correta', explanation: 'Descreve com precisão a origem metropolitana lusitana do instituto das sesmarias (concessão de propriedades não aproveitadas mediante os sesmeiros).' },
+      { letter: 'E', status: 'incorreta', explanation: 'As capitanias pertenciam ao capitalismo comercial/mercantilista do século XVI, jamais ao capitalismo industrial.' },
+    ],
+    proposedAnswer: 'D',
+    officialAnswer: null,
+    officialAnswerStatus: 'unavailable',
+    verificationStatus: 'verified_independent',
+    verificationNotes: 'Definição histórica da Lei das Sesmarias lusitana transposta ao Brasil Colonial.',
+    reviewedAt: REVIEW_DATE,
+    contentVersion: 2,
+  },
+  {
+    questionId: 'ufrr-2022-q50',
+    examId: EXAM_ID,
+    subject: 'História',
+    topic: 'Período Joanino — Presença Britânica e Abertura dos Portos',
+    questionType: 'his-brasil-periodo-joanino-inglaterra-1808',
+    methodTitle: 'Hegemonia Comercial Britânica no Brasil Joanino (1808–1822)',
+    decisiveConcept:
+      'A transferência da Corte em 1808 (escoltada pela Marinha britânica), a Abertura dos Portos (1808) e os Tratados de 1810 consolidaram a **hegemonia comercial inglesa** sobre o Brasil, estendendo-se para além da Independência em 1822 por meio de empréstimos e tratados desiguais.',
+    quickSolution:
+      'A **Alternativa A** resume com exatidão o processo descrito no texto: a vinda da Corte em 1808 reforçou a influência britânica, que defendeu seus interesses comerciais e financeiros diante das fragilidades de Portugal e do Brasil recém-independente.',
+    macete: {
+      title: '1808 + Abertura dos Portos + Tratados de 1810 = LUCRO MÁXIMO da Inglaterra (nunca prejuízo!)',
+      strategy:
+        'A ideia-chave do Período Joanino é: a **Inglaterra saiu ganhando**! Por isso, corte qualquer alternativa que diga *"ingleses derrotados fugiram"* (B), *"prejudicou os interesses britânicos"* (C), *"favorecia sobremaneira o Brasil"* (D — o tratado de 1810 dava tarifa de 15% aos ingleses!) ou *"D. João reconquistou prestígio econômico português na Europa"* (E). Sobra só **A**!',
+      whenToUse: 'Questões sobre transferência da Corte Portuguesa, Abertura dos Portos e Tratados de 1810.',
+      caution: 'Apesar de romper o pacto colonial português, a Abertura dos Portos beneficiou acima de tudo a potência industrial da época: a Grã-Bretanha.',
+    },
+    alternativeAnalysis: [
+      { letter: 'A', status: 'correta', explanation: 'Retrata fielmente a consolidação dos interesses comerciais britânicos no Brasil a partir de 1808 até os primeiros anos pós-Independência.' },
+      { letter: 'B', status: 'incorreta', explanation: 'A Grã-Bretanha não foi derrotada nem fugiu para o Brasil; foi a aliada naval que escoltou a família real portuguesa na travessia atlântica.' },
+      { letter: 'C', status: 'incorreta', explanation: 'A Abertura dos Portos atendeu exatamente aos interesses britânicos de escoar manufaturados após o Bloqueio Continental napoleônico.' },
+      { letter: 'D', status: 'incorreta', explanation: 'O Tratado de Comércio e Navegação de 1810 fixou alíquota privilegiada de $15\\%$ para produtos britânicos (menor que os $16\\%$ portugueses e $24\\%$ de outras nações), favorecendo a Grã-Bretanha, não o Brasil.' },
+      { letter: 'E', status: 'incorreta', explanation: 'Portugal ficou devastado pela ocupação francesa e perdeu sua centralidade comercial para o Rio de Janeiro e para Londres.' },
+    ],
+    proposedAnswer: 'A',
+    officialAnswer: null,
+    officialAnswerStatus: 'unavailable',
+    verificationStatus: 'verified_independent',
+    verificationNotes: 'Consenso historiográfico sobre o Período Joanino e a presença inglesa (Olga Pantaleão / HGCB).',
+    reviewedAt: REVIEW_DATE,
+    contentVersion: 2,
+  },
+  {
+    questionId: 'ufrr-2022-q51',
+    examId: EXAM_ID,
+    subject: 'História',
+    topic: 'História Regional e da Amazônia — Fronteiras e Colonização',
+    questionType: 'his-amazonia-orellana-1542-fronteiras',
+    methodTitle: 'Expedições Amazônicas do Século XVI (Orellana, 1542) e Erros Comuns sobre Roraima',
+    decisiveConcept:
+      'Em **1541–1542**, a expedição espanhola de **Gonzalo Pizarro e Francisco de Orellana** desceu os Andes rumo à planície amazônica em busca de riquezas (Eldorado/Canela), cabendo a **Orellana** percorrer todo o curso do rio Amazonas até alcançar sua foz atlântica em **1542**.',
+    quickSolution:
+      'A **Alternativa D** está historicamente exata (expedição Pizarro/Orellana descendo os Andes até a foz em 1542). Todas as demais contêm erros geográficos ou cronológicos objetivos:\n- **A**: o texto afirma *"ora navegando, ora caminhando"* e o Rio Branco não é plenamente navegável todo o ano em todo o seu curso.\n- **B**: o Forte do Presépio (Belém) foi fundado em **1616** (não 1646), e o Rio Branco não tem o nome de Castello Branco.\n- **C**: a Capitania do Cabo Norte (1637) correspondia ao atual **Amapá** (não Roraima), doada a Bento **Maciel** Parente.\n- **E**: o texto fala em ligação com o litoral **amazônico caribenho**, e não o litoral brasileiro.',
+    macete: {
+      title: 'Forte do Presépio = 1616 (Belém) e Cabo Norte = Amapá (Bento Maciel Parente)!',
+      strategy:
+        'Para provas da UFRR sobre Amazônia, guarde três marcos exatos:\n1. **1542**: Francisco de **Orellana** (vindo dos Andes com Pizarro) completa a descida do Amazonas até a foz.\n2. **1616**: Fundação do **Forte do Presépio** (Belém) por Francisco Caldeira Castello Branco (nunca 1646!).\n3. **1637**: Capitania do **Cabo Norte** = atual **Amapá** (Bento Maciel Parente).',
+      whenToUse: 'Questões de História da Amazônia e Roraima sobre expedições coloniais e fronteiras.',
+      caution: 'Leia B devagar: trocaram *1616* por *1646* e inventaram que Castello Branco deu nome ao Rio Branco!',
+    },
+    alternativeAnalysis: [
+      { letter: 'A', status: 'incorreta', explanation: 'O texto não afirma navegabilidade anual contínua (diz *"ora navegando, ora caminhando"*), e o Rio Branco possui trechos de corredeiras (Bem-Querer) e sazonalidade severa na seca.' },
+      { letter: 'B', status: 'incorreta', explanation: 'Duplo erro: o Forte do Presépio (Belém) foi fundado em **1616** (não 1646), e Castello Branco não alcançou nem deu nome ao Rio Branco (nomeado pela cor barrenta/clara de suas águas).' },
+      { letter: 'C', status: 'incorreta', explanation: 'A Capitania do Cabo Norte criada em 1637 corresponde ao atual estado do **Amapá** (e o donatário chamava-se Bento *Maciel* Parente, não *Manuel*).' },
+      { letter: 'D', status: 'correta', explanation: 'Relata com precisão a expedição de 1541–1542 de Gonzalo Pizarro e Francisco de Orellana, primeiro europeu a navegar o Amazonas dos Andes até a foz em 1542.' },
+      { letter: 'E', status: 'incorreta', explanation: 'O texto de Reginaldo Gomes de Oliveira refere-se ao litoral **amazônico caribenho** (Guianas/Suriname/Caribe), não ao litoral brasileiro.' },
+    ],
+    proposedAnswer: 'D',
+    officialAnswer: null,
+    officialAnswerStatus: 'unavailable',
+    verificationStatus: 'verified_independent',
+    verificationNotes: 'Cronologia amazônica exata: Orellana atingiu a foz do Amazonas em agosto de 1542; Forte do Presépio foi em 1616; Cabo Norte era no Amapá.',
+    reviewedAt: REVIEW_DATE,
+    contentVersion: 2,
+  },
+  {
+    questionId: 'ufrr-2022-q52',
+    examId: EXAM_ID,
+    subject: 'História',
+    topic: 'Idade Média — Feudalismo e Ordem da Cavalaria',
+    questionType: 'his-medieval-feudalismo-ordem-cavalaria-igreja',
+    methodTitle: 'Cristianização da Cavalaria Medieval nos Séculos XI–XII (Cruzadas e Ordens Militares)',
+    decisiveConcept:
+      'Entre os séculos **XI e XII** (movimentos da Paz de Deus, Cruzadas e criação de ordens religioso-militares como os Templários), a Igreja Católica incorporou e sacralizou a **Ordem da Cavalaria**, conferindo aos cavaleiros um ethos cristão quase religioso e elevando seu prestígio e poderio.',
+    quickSolution:
+      'A **Alternativa D** corresponde exatamente ao apogeu histórico da cavalaria feudal nos séculos XI–XII, quando a Igreja conferiu caráter sagrado/quase religioso ao ofício do cavaleiro (defesa da fé, dos fracos e da Terra Santa).',
+    macete: {
+      title: 'Cavalaria + Séculos XI–XII = Cruzadas + Sacralização pela Igreja!',
+      strategy:
+        'A Igreja nunca rejeitou a cavalaria (corta B), nem existia arquiduque no século VII/feudal clássico (corta C), nem "heróis gregos" (corta A) ou "sociedade inclusiva" (anacronismo gritante em E!). O papel cristianizador da Igreja nos séculos XI–XII crava **D**.',
+      whenToUse: 'Questões sobre sociedade feudal, nobreza guerreira e papel da Igreja na Idade Média.',
+      caution: 'Observe o anacronismo léxico de E (*"sociedade mais inclusiva"*) — típico de distratores inventados.',
+    },
+    alternativeAnalysis: [
+      { letter: 'A', status: 'incorreta', explanation: 'A cavalaria surgiu das aristocracias guerreiras medievais e da fusão germano-cristã, e não de imitação dos heróis míticos gregos.' },
+      { letter: 'B', status: 'incorreta', explanation: 'Ao contrário, a Igreja incentivou, ritualizou a investidura e mobilizou a cavalaria cristã especialmente durante as Cruzadas.' },
+      { letter: 'C', status: 'incorreta', explanation: 'O título de arquiduque surgiu séculos depois (Casa da Áustria/Habsburgos) e não era requisito para armar cavaleiros.' },
+      { letter: 'D', status: 'correta', explanation: 'Nos séculos XI e XII, com as Cruzadas e os rituais cristãos de investidura, a Igreja deu à cavalaria um estatuto quase religioso e seu auge de poder.' },
+      { letter: 'E', status: 'incorreta', explanation: 'Projeta um conceito contemporâneo anacrônico ("sociedade mais inclusiva") sobre a hierarquia estamental feudal.' },
+    ],
+    proposedAnswer: 'D',
+    officialAnswer: null,
+    officialAnswerStatus: 'unavailable',
+    verificationStatus: 'verified_independent',
+    verificationNotes: 'Síntese histórica de Paulo Miceli (O feudalismo, p. 43) e Georges Duby sobre a sacralização da cavalaria nos séculos XI–XII.',
+    reviewedAt: REVIEW_DATE,
+    contentVersion: 2,
+  },
+  {
+    questionId: 'ufrr-2022-q53',
+    examId: EXAM_ID,
+    subject: 'História',
+    topic: 'Antiguidade Oriental — Egito Antigo',
+    questionType: 'his-antiga-egito-infanticidio-abundancia-nilo',
+    methodTitle: 'Causas Materiais da Preservação Infantil no Egito Antigo (Diodoro Sículo / Jaime Pinsky)',
+    decisiveConcept:
+      'Segundo os registros gregos da Antiguidade (como Diodoro Sículo, citados por Jaime Pinsky), o Egito Antigo distinguia-se do mundo greco-romano por **não praticar o infanticídio/abandono**, pois a **abundância agrícola garantida pelas cheias do rio Nilo** tornava barato e viável criar todos os filhos.',
+    quickSolution:
+      'Enquanto em outras sociedades antigas a escassez levava ao abandono ou infanticídio de recém-nascidos, no Egito Antigo **a relativa abundância material permitia criar todas as crianças** que sobreviviam às causas naturais (**Alternativa B**).',
+    macete: {
+      title: 'Explicação histórica materialista (Nilo = abundância alimentar) vence lendas fictícias!',
+      strategy:
+        'Desconfie de alternativas com detalhes míticos suspeitos ou inventados ("deusa Hektsamo" em C, "dedicados a Anúbis em infanticídio simbólico" em D, "pátio do palácio real refúgio" em E, "representavam o divino Faraó" em A). A resposta sólida em História Econômica/Social da Antiguidade está na base material: **abundância produtiva do Egito** (**B**)!',
+      whenToUse: 'Questões sobre sociedade e cotidiano nas civilizações hidráulicas da Antiguidade (Egito e Mesopotâmia).',
+      caution: 'Mesmo com alta mortalidade infantil natural na Antiguidade, não havia eliminação deliberada dos recém-nascidos como política familiar.',
+    },
+    alternativeAnalysis: [
+      { letter: 'A', status: 'incorreta', explanation: 'A divindade real encarnava-se exclusivamente no Faraó (Hórus vivo), e não em todas as crianças comuns.' },
+      { letter: 'B', status: 'correta', explanation: 'Conforme destaca Jaime Pinsky (ecoando Diodoro Sículo), a fertilidade e relativa abundância egípcia viabilizavam o sustento de toda a prole.' },
+      { letter: 'C', status: 'incorreta', explanation: 'Narrativa fictícia ("Hektsamo" nem sequer corresponde a divindade egípcia com tal função punitiva).' },
+      { letter: 'D', status: 'incorreta', explanation: 'Anúbis era o deus dos mortos e da mumificação, sem relação com supostos rituais simbólicos de infanticídio.' },
+      { letter: 'E', status: 'incorreta', explanation: 'Construção fictícia inexistente na organização social e palaciana egípcia.' },
+    ],
+    proposedAnswer: 'B',
+    officialAnswer: null,
+    officialAnswerStatus: 'unavailable',
+    verificationStatus: 'verified_independent',
+    verificationNotes: 'Corresponde diretamente à passagem de Jaime Pinsky (As primeiras civilizações, pp. 76–77), baseada em Diodoro Sículo.',
+    reviewedAt: REVIEW_DATE,
+    contentVersion: 2,
+  },
+  {
+    questionId: 'ufrr-2022-q54',
+    examId: EXAM_ID,
+    subject: 'História',
+    topic: 'Idade Contemporânea — Revolução Industrial e Produção Artesanal',
+    questionType: 'his-contemporanea-oficina-artesanal-corporacoes-hierarquia',
+    methodTitle: 'Estrutura Hierárquica da Oficina Artesanal (Aprendiz $\\to$ Oficial $\\to$ Mestre)',
+    decisiveConcept:
+      'Na produção artesanal pré-industrial (corporações de ofício), a oficina organizava-se de forma **hierárquica** — dos **aprendizes** (e oficiais/companheiros) até o **mestre**, com o **chefe** da oficina/família no topo da direção, e possibilidade de ascensão profissional após anos de formação e apresentação da "obra-prima".',
+    quickSolution:
+      'Eliminam-se os absurdos históricos:\n- **A**: aprendizes podiam ascender a oficiais e, cumprindo os requisitos da corporação, tornar-se mestres.\n- **C**: as corporações de ofício (*guildas*) reuniam artesãos do mesmo ramo de modo perfeitamente legal e regulamentado.\n- **D**: a aprendizagem infantil na oficina visava justamente ensinar o ofício desde o início, sem exigir treinamento prévio familiar documentado.\n- **E**: não havia "capataz" proibindo contato — o aprendiz convivia e aprendia diretamente com o mestre.\n\nLogo, a estrutura correta é expressa pela **Alternativa B** (organização hierárquica na oficina do aprendiz até o mestre/chefe).',
+    macete: {
+      title: 'Oficina artesanal = Hierarquia Aprendiz → Oficial → Mestre (e SEM capataz de fábrica!)',
+      strategy:
+        'A figura do capataz/supervisor que vigia operários alienados pertence à manufatura/fábrica industrial (E fora). Também nunca havia proibição de ascensão absoluta (A fora) nem criminalização das associações de ofício na época artesanal (C fora). Sobram B e D — e ninguém precisava comprovar treinamento prévio formal para virar aprendiz infantil (D fora)!',
+      whenToUse: 'Questões comparando artesanato (corporações de ofício), manufatura e maquinofatura na transição para a Revolução Industrial.',
+      caution: 'Lembre-se de que, na oficina descrita por Letícia Canêdo, o mestre acumula o papel de dono dos utensílios e chefe da oficina familiar.',
+    },
+    alternativeAnalysis: [
+      { letter: 'A', status: 'incorreta', explanation: 'Falso: a carreira artesanal previa justamente a progressão de aprendiz a oficial (jornaleiro) e, eventualmente, a mestre.' },
+      { letter: 'B', status: 'correta', explanation: 'Retrata a organização hierárquica da oficina artesanal, partindo do aprendiz até o mestre/chefe dirigente da unidade.' },
+      { letter: 'C', status: 'incorreta', explanation: 'Falso: as corporações de ofício eram associações profissionais reconhecidas que regulavam qualidade, preços e formação na Europa pré-industrial.' },
+      { letter: 'D', status: 'incorreta', explanation: 'Falso: crianças ingressavam como aprendizes justamente para iniciar o aprendizado do ofício com o mestre, sem exigência de treinamento prévio.' },
+      { letter: 'E', status: 'incorreta', explanation: 'Falso: o convívio direto e cotidiano entre mestre e aprendiz (muitas vezes na própria moradia-oficina) era a base da transmissão do ofício, não existindo "capataz".' },
+    ],
+    proposedAnswer: 'B',
+    officialAnswer: null,
+    officialAnswerStatus: 'unavailable',
+    verificationStatus: 'verified_independent',
+    verificationNotes: 'Eliminação integral de A, C, D e E; B reproduz a hierarquia artesanal descrita em Letícia Canêdo (p. 16).',
+    reviewedAt: REVIEW_DATE,
+    contentVersion: 2,
+  },
+];

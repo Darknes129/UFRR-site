@@ -1,0 +1,6 @@
+{
+  "name": "UFRR Study",
+  "description": "Plataforma tablet-first de preparação para o vestibular da UFRR com simulados realistas, banco de questões, redação manuscrita e rascunho com caneta.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
